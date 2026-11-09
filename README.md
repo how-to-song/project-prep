@@ -123,8 +123,6 @@ cmd /c rmdir "$env:USERPROFILE\.claude\skills\project-prep"
 - 실제 `/project-prep` 슬래시 호출로 처음부터 끝까지 진행한 시험은 아직 없다. 스킬 목록에 나타나는 것까지만 확인했다.
 - 소스 파일이 이미 있는 JS 프로젝트에서 Stop 훅을 바로 등록하는 경로와, JS가 아닌 언어의 API 문서 도구 경로는 시험하지 않았다.
 
-## 참고
-[jungle-deck](https://github.com/benjohnbill/jungle-deck)(MIT)의 구조를 참고했다. 본문을 안내판으로 두고 단계 파일을 나누는 방식, 단계별 완료 조건, 의존성 대안 표가 그 예이다. 문구와 코드는 가져오지 않았다.
 
 ## 라이선스
 [MIT](LICENSE)
