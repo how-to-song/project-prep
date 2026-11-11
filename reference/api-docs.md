@@ -12,7 +12,7 @@ Ask in the same message as the automation-scope question:
 - JavaScript project: suggest `jsdoc-to-markdown` with JSDoc.
 - Other languages: suggest the language's common tool as a proposal. Use it only if the user picks it, and follow the same order below with that tool's commands.
 - Not decided, or TypeScript without a chosen tool: write `(미정)` in CLAUDE.md and skip the rest.
-- The user declines: delete the API-doc lines from the CLAUDE.md template.
+- The user declines: delete these CLAUDE.md template lines: 문서 생성 in 명령어, and the 문서 주석 and `{{API 문서 경로}}` lines in 문서화. Keep the design-document line.
 
 ## JavaScript with jsdoc-to-markdown
 

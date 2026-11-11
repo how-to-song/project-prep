@@ -39,7 +39,7 @@ There is no separate state file. The outputs are the state, so the skill can res
 | 1. Repository and README | The user said they created the repository, or the target is a git repository with a remote. | `reference/repo-setup.md` |
 | 2. Clone | The target folder has `.git`. | `reference/repo-setup.md` |
 | 3. Design | Overview, requirements, and design documents exist and are approved. | "Step 3" below |
-| 4. CLAUDE.md | It exists at the target root, and each required section is filled or marked `(미정)`. | `reference/claude-md-template.md` |
+| 4. CLAUDE.md | It exists at the target root, and each required section listed in `reference/claude-md-template.md` exists and is filled or marked `(미정)`. 작업 분담 may still hold its placeholder. | `reference/claude-md-template.md` |
 | 5. Work units | A plan exists in `docs/superpowers/plans/`. | "Step 5" below |
 | 6. Agents | `.claude/agents/` has an implementer and a verifier, and the plan's units show their owners. | `reference/agent-templates.md` |
 | 7. Readiness | The checklist passes. | `reference/readiness-check.md` |

@@ -17,7 +17,8 @@ If the user says to continue, go on below. If step 3 finished before this sessio
 - Fill `{{...}}` only from the step 3 documents. Without a source, write `(미정)`. If no test command has been chosen, do not guess a common one.
 - For constraints and design decisions, copy only what every session needs. Implementation details stay in the design documents.
 - Delete lines that do not fit the project. Numbers are defaults, so use the design documents' values when they differ.
-- The 기본 원칙 section and the 배운 점 line are mandatory. Copy them exactly as written. Never delete, shorten, or ask whether to include them.
+- Required sections: 문서, 기본 원칙, 명령어, 작업 방식, 작업 분담. Never delete them or ask whether to include them. Unknown values inside them are `(미정)`. The other sections are optional.
+- Copy the 기본 원칙 section and the 배운 점 line exactly as written.
 - Ask the user about the automation scope once, and write the answer as given: "단위가 끝나 검증을 통과하면 커밋과 push를 어디까지 확인 없이 할까요? PR과 이슈는 어떻게 할까요?"
 - Read `reference/api-docs.md` and ask its question in the same message. Its answer fills 문서 생성 and the API-doc lines of 문서화.
 - Leave the 작업 분담 section as a heading and a placeholder line. Step 6 fills it.
@@ -25,7 +26,7 @@ If the user says to continue, go on below. If step 3 finished before this sessio
 ## When CLAUDE.md already exists
 
 Do not overwrite it. Compare it with the template, show only the missing sections, and append only the sections the user approves.
-Exception: always append the 기본 원칙 section and the 배운 점 line if they are missing, without asking. Show what you appended.
+Exception: always append missing required sections and the 배운 점 line without asking, and show what you appended. If an existing section covers a required one under another name, ask once whether it counts instead of appending a duplicate.
 Do not append a line that conflicts with an existing rule. Report the conflict instead.
 
 ## Template
@@ -76,7 +77,7 @@ Do not append a line that conflicts with an existing rule. Report the conflict i
 (6단계에서 채운다.)
 
 ## 문서화
-- 내보내는 함수와 클래스에는 {{문서 주석 형식}}을 작성한다. 설명은 한국어로 쓰고, 태그와 타입, 인자 이름은 영어로 둔다.
+- 문서 주석: {{문서 주석 형식}}. 내보내는 함수와 클래스에 작성하고, 설명은 한국어로, 태그와 타입, 인자 이름은 영어로 둔다.
 - `{{API 문서 경로}}`는 자동 생성 파일이므로 직접 고치지 않는다.
 - 구조나 설계가 바뀌면 설계 문서에 변경 내용과 이유를 적는다.
 
