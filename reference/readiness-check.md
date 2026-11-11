@@ -7,7 +7,7 @@ Open the files and check them. Do not rely on your memory of creating them in ea
 | Item | Check | If it fails |
 |---|---|---|
 | Design documents | Overview, requirements, and design documents exist and are not empty. | Step 3 |
-| CLAUDE.md | Required sections exist and the 작업 분담 section is filled. | Steps 4, 6 |
+| CLAUDE.md | Required sections exist, the 기본 원칙 section matches the template word for word, and the 작업 분담 section is filled. | Steps 4, 6 |
 | Plan | A plan exists in `docs/superpowers/plans/` with a first unit. | Step 5 |
 | Plan values | Any value the plan set that is missing from the step 3 documents and changes behavior or external formats was confirmed by the user or is `(미정)`. | Step 5 |
 | Agents | An implementer and a verifier exist, and their frontmatter has `name`, `description`, `model`, `effort`, and `tools`. The verifier's `tools` has no `Write` or `Edit`. | Step 6 |
